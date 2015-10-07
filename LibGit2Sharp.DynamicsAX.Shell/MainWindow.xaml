@@ -1,0 +1,9 @@
+﻿<Window x:Class="LibGit2Sharp.DynamicsAX.Shell.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:synchronize="clr-namespace:LibGit2Sharp.DynamicsAX.Controls.Synchronize;assembly=LibGit2Sharp.DynamicsAX"
+        Title="MainWindow" Height="700" Width="700">
+    <Grid>
+        <synchronize:SynchronizeView Name="SynchronizeView"></synchronize:SynchronizeView>
+    </Grid>
+</Window>

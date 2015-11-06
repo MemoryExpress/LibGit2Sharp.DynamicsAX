@@ -38,6 +38,9 @@
     <Reference Include="LibGit2Sharp">
       <HintPath>..\packages\LibGit2Sharp.0.21.0.176\lib\net40\LibGit2Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Windows.Shell">
+      <HintPath>..\packages\Microsoft.Windows.Shell.3.0.1.0\lib\net40\Microsoft.Windows.Shell.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Data" />
@@ -55,6 +58,9 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\CommitsView.xaml.cs">
+      <DependentUpon>CommitsView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\RepositoryViewModel.cs" />
     <Page Include="Controls\CheckIn\CheckIn.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -63,24 +69,21 @@
     <Compile Include="Controls\CheckIn\CheckIn.xaml.cs">
       <DependentUpon>CheckIn.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\CommitsView\CommitsView.xaml.cs">
-      <DependentUpon>CommitsView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\Synchronize\SynchronizeView.xaml.cs">
+    <Compile Include="Controls\SynchronizeView.xaml.cs">
       <DependentUpon>SynchronizeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Framework.cs" />
     <Compile Include="Microsoft\Extensions.cs" />
     <Compile Include="RepositoryExtensions.cs" />
-    <Page Include="Controls\CommitsView\CommitsView.xaml">
+    <Page Include="Controls\CommitsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\Synchronize\SynchronizeView.xaml">
+    <Page Include="Controls\Styles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\CommitsView\Styles\ChangesetHistoryDataGrid.xaml">
+    <Page Include="Controls\SynchronizeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -110,6 +113,7 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -15,7 +15,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using LibGit2Sharp.DynamicsAX.ViewModels;
 
 namespace LibGit2Sharp.DynamicsAX.Shell
 {
@@ -24,22 +23,19 @@ namespace LibGit2Sharp.DynamicsAX.Shell
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Repository _repository;
 
         public MainWindow()
         {
             InitializeComponent();
 
-            _repository = new Repository(@"C:\AX\Repos\POS\AXPOS");
 
-            SynchronizeView.Repository = _repository;
+
+            SynchronizeView.RepositoryPath = @"C:\Memx\MemxRetail";
         }
 
         protected override void OnClosed(EventArgs e)
         {
             base.OnClosed(e);
-
-            _repository.Dispose();
         }
     }
 }

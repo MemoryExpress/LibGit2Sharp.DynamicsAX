@@ -48,5 +48,21 @@ namespace LibGit2Sharp.DynamicsAX
                     yield return commit;
             }
         }
+
+        public static IEnumerable<Branch> ListBranchesContainingCommit(this Repository repo, string commitSha, bool localOnly = false)
+        {
+            var heads = (IEnumerable<Reference>)repo.Refs;
+            
+            if(localOnly)
+                heads = heads.Where(r => r.IsLocalBranch());
+
+            var commit = repo.Lookup<Commit>(commitSha);
+            var localHeadsContainingTheCommit = repo.Refs.ReachableFrom(heads, new[] { commit });
+
+            return localHeadsContainingTheCommit
+                .Select(branchRef => repo.Branches[branchRef.CanonicalName]);
+        }
+
+
     }
 }

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibGit2Sharp.DynamicsAX.She
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Git-GUI", "Git-GUI\Git-GUI.csproj", "{3E181F9A-55E5-4769-BB53-AE95AC319AAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibGit2Sharp.DynamicsAX.Tests", "LibGit2Sharp.DynamicsAX.Tests\LibGit2Sharp.DynamicsAX.Tests.csproj", "{A397F5B7-2121-4A9F-8B52-92C5BEAC7917}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -82,6 +84,24 @@ Global
 		{3E181F9A-55E5-4769-BB53-AE95AC319AAF}.Release|x64.Build.0 = Release|x64
 		{3E181F9A-55E5-4769-BB53-AE95AC319AAF}.Release|x86.ActiveCfg = Release|x86
 		{3E181F9A-55E5-4769-BB53-AE95AC319AAF}.Release|x86.Build.0 = Release|x86
+		{A397F5B7-2121-4A9F-8B52-92C5BEAC7917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A397F5B7-2121-4A9F-8B52-92C5BEAC7917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A397F5B7-2121-4A9F-8B52-92C5BEAC7917}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A397F5B7-2121-4A9F-8B52-92C5BEAC7917}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A397F5B7-2121-4A9F-8B52-92C5BEAC7917}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A397F5B7-2121-4A9F-8B52-92C5BEAC7917}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A397F5B7-2121-4A9F-8B52-92C5BEAC7917}.Release x86-64|Any CPU.ActiveCfg = Release|Any CPU
+		{A397F5B7-2121-4A9F-8B52-92C5BEAC7917}.Release x86-64|Any CPU.Build.0 = Release|Any CPU
+		{A397F5B7-2121-4A9F-8B52-92C5BEAC7917}.Release x86-64|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A397F5B7-2121-4A9F-8B52-92C5BEAC7917}.Release x86-64|Mixed Platforms.Build.0 = Release|Any CPU
+		{A397F5B7-2121-4A9F-8B52-92C5BEAC7917}.Release x86-64|x64.ActiveCfg = Release|Any CPU
+		{A397F5B7-2121-4A9F-8B52-92C5BEAC7917}.Release x86-64|x86.ActiveCfg = Release|Any CPU
+		{A397F5B7-2121-4A9F-8B52-92C5BEAC7917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A397F5B7-2121-4A9F-8B52-92C5BEAC7917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A397F5B7-2121-4A9F-8B52-92C5BEAC7917}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A397F5B7-2121-4A9F-8B52-92C5BEAC7917}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A397F5B7-2121-4A9F-8B52-92C5BEAC7917}.Release|x64.ActiveCfg = Release|Any CPU
+		{A397F5B7-2121-4A9F-8B52-92C5BEAC7917}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

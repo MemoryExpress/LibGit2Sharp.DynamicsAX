@@ -8,7 +8,9 @@
              Name="Commits">
     <DataGrid
         ItemsSource="{Binding Commits}"
-        AutoGenerateColumns="False">
+        AutoGenerateColumns="False"
+        IsReadOnly="True"
+        SelectionUnit="FullRow">
         <DataGrid.Columns>
             <DataGridTemplateColumn Header="Graph">
                 <DataGridTemplateColumn.CellTemplate>
